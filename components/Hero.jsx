@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
-import Image from "next/image";
-
+import Image from 'next/image'
 
 const Hero = () => {
   return (
@@ -16,7 +15,7 @@ const Hero = () => {
               <h1 className="mb-4 font-weight-normal line-height-1_4">
                 Criamos sua landingpage{' '}
                 <span className="text-primary font-weight-medium">
-                  Comercial!
+                  comercial!
                 </span>
               </h1>
               <p className="text-muted mb-4 pb-2">
@@ -26,16 +25,17 @@ const Hero = () => {
                 not only five centuries, but also the leap into electronic
                 typesetting, remaining essentially unchanged.
               </p>
-              <button className="btn btn-warning">
-                Solicite um orçamento <span className="ml-2 right-icon">&#8594;</span>
-              </button>
+              <a href="#" className="btn btn-warning">
+                Solicite um orçamento{' '}
+                <span className="ml-2 right-icon">&#8594;</span>
+              </a>
             </div>
           </Col>
           <Col lg={6}>
             <div className="mt-5 mt-lg-0">
               <Image
-                src=""
-                alt=""
+                src="/images/Group Members.png"
+                alt="imagem 1"
                 className="img-fluid mx-auto d-block"
               />
             </div>
