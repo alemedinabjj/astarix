@@ -25,7 +25,10 @@ const Hero = () => {
                 not only five centuries, but also the leap into electronic
                 typesetting, remaining essentially unchanged.
               </p>
-              <a href="#" className="btn btn-warning">
+              <a href="https://wa.me/5511991207155?text=Ol%C3%A1,%20tenho%20interesse%20em%20contratar%20o%20seu%20servi%C3%A7o"
+               target="_blank"
+               rel='noreferrer'
+              className="btn btn-warning">
                 Solicite um orçamento{' '}
                 <span className="ml-2 right-icon">&#8594;</span>
               </a>
@@ -34,7 +37,9 @@ const Hero = () => {
           <Col lg={6}>
             <div className="mt-5 mt-lg-0">
               <Image
-                src="/images/Group Members.png"
+                width={500}
+                height={500}
+                src=""
                 alt="imagem 1"
                 className="img-fluid mx-auto d-block"
               />

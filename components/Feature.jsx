@@ -40,7 +40,7 @@ const FeatureBox = (props) => {
         </Col>
         <Col md={{size:5, offset:1}} className="mt-5 mt-sm-0">
           <div>
-            <Image src={feature.img} alt="feature" className="img-fluid d-block mx-auto"/>
+            <Image width={200} height={200} src='' alt="feature" className="img-fluid d-block mx-auto"/>
           </div>
         </Col>
       </Row>
