@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import {
   Container,
   Collapse,
@@ -8,22 +8,23 @@ import {
   Nav,
   NavItem,
   NavLink
-} from 'reactstrap';
+} from 'reactstrap'
+import Image from 'next/image'
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [sticky, setSticky] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  const [isOpen, setIsOpen] = useState(false)
+  const [sticky, setSticky] = useState(false)
+  const toggle = () => setIsOpen(!isOpen)
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-  });
+    window.addEventListener('scroll', handleScroll)
+  })
 
   const handleScroll = () => {
     if (window.scrollY > 90) {
-      setSticky(true);
+      setSticky(true)
     } else if (window.scrollY < 90) {
-      setSticky(false);
+      setSticky(false)
     }
   }
 
@@ -31,7 +32,9 @@ const Header = () => {
     <div className={`header${sticky ? ' sticky' : ''}`}>
       <Navbar light expand="md">
         <Container>
-          <NavbarBrand href="/">LOGO</NavbarBrand>
+          <NavbarBrand href="/" className="d-flex justify-content-center align-items-center">
+            <Image width={200} height={80} src="/assets/astarix_logo.png" alt='Logo do website Astarix' />
+          </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="m-auto" navbar>
@@ -52,7 +55,7 @@ const Header = () => {
         </Container>
       </Navbar>
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header

@@ -15,15 +15,14 @@ const Hero = () => {
               <h1 className="mb-4 font-weight-normal line-height-1_4">
                 Criamos sua landingpage{' '}
                 <span className="text-primary font-weight-medium">
-                  comercial!
+                  para seu negócio.
                 </span>
               </h1>
               <p className="text-muted mb-4 pb-2">
-                Lorem Ipsum has been the industrys standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. It has survived
-                not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged.
+                Com as tecnologias mais modernas, e melhores praticas de SEO para ser encontrado no Google.
+                Consulte nossos planos e escolha o que melhor se encaixa no seu negócio.
+                Com alta performance e responsividade, seu site poderá ser acessado em qualquer dispositivo.
+
               </p>
               <a href="https://wa.me/5511991207155?text=Ol%C3%A1,%20tenho%20interesse%20em%20contratar%20o%20seu%20servi%C3%A7o"
                target="_blank"
@@ -35,11 +34,11 @@ const Hero = () => {
             </div>
           </Col>
           <Col lg={6}>
-            <div className="mt-5 mt-lg-0">
+            <div className="mt-5 mt-lg-0 d-flex justify-content-end">
               <Image
                 width={500}
                 height={500}
-                src=""
+                src="/assets/Hero.svg"
                 alt="imagem 1"
                 className="img-fluid mx-auto d-block"
               />
